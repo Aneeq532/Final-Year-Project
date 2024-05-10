@@ -1,0 +1,8 @@
+.sticky-menubar {
+    position: fixed;
+    /* Make it stick to the screen */
+    top: 80px;
+    /* Position it at the top */
+    left: 0;
+    /* Position it at the left */
+}

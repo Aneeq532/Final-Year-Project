@@ -1,10 +1,10 @@
 import React from 'react';
 
-function CHome() {
+function HFocal() {
   return (
     <div className="bg-white rounded-lg px-4 py-6 flex flex-col justify-center items-center"> 
       <div className="mb-4"> 
-        <h2 className="text-xl font-bold text-gray-800">Welcome Shah Marjan</h2>
+        <h2 className="text-xl font-bold text-gray-800">Welcome To Focal-Person DashBoard</h2>
         <p className="text-gray-500 text-base">There are currently:</p>
       </div>
       <div className="flex space-x-7"> 
@@ -32,21 +32,27 @@ function CHome() {
               <th className="p-2">Application ID</th>
               <th className="p-2">Application Type</th>
               <th className="p-2">Date</th>
-              <th className="p-2">Status</th>
+              <th className="p-2">Department</th>
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-gray-200 hover:bg-gray-100" onClick={() => alert("CLICKED")}>
+            <tr className="border-b border-gray-200 hover:bg-gray-100">
               <td className="p-2">92</td>
               <td className="p-2">CMS Password Reset</td>
               <td className="p-2">18/09/23</td>
-              <td className="p-2 text-red-500">Old</td>
+              <td className="p-2">Software</td>
             </tr>
-            <tr className="border-b border-gray-200 hover:bg-gray-100" onClick={() => alert("CLICKED")}>
+            <tr className="border-b border-gray-200 hover:bg-gray-100">
               <td className="p-2">84</td>
               <td className="p-2">Name Correction</td>
               <td className="p-2">18/09/23</td>
-              <td className="p-2 text-green-500">New</td>
+              <td className="p-2">Software</td>
+            </tr>
+            <tr className="border-b border-gray-200 hover:bg-gray-100">
+              <td className="p-2">88</td>
+              <td className="p-2">WOW</td>
+              <td className="p-2">18/09/23</td>
+              <td className="p-2">Super</td>
             </tr>
           </tbody>
         </table>
@@ -56,4 +62,4 @@ function CHome() {
   );
 }
 
-export default CHome;
+export default HFocal;

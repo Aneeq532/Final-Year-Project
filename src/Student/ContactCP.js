@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 
 
-const ContactForm = () => {
+const ContactCP = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [faculty, setFaculty] = useState('');
@@ -136,4 +136,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ContactCP;

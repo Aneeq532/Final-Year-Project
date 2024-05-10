@@ -1,6 +1,6 @@
 import React from 'react';
 
-function RequestSummary() {
+function HAdmin() {
   return (
     <div className="bg-white rounded-lg px-4 py-6 flex flex-col justify-center items-center"> 
       <div className="mb-4"> 
@@ -62,4 +62,4 @@ function RequestSummary() {
   );
 }
 
-export default RequestSummary;
+export default HAdmin;

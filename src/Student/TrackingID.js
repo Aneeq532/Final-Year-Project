@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function TrackingID() {
   const [trackingId, setTrackingId] = useState('');
@@ -14,7 +15,7 @@ function TrackingID() {
   };
 
   return (
-        <div className="container mx-auto px-4 py-8 flex items-center justify-center h-screen"> 
+        <div className="container mx-auto px-4 py-8 flex items-center justify-center "> 
           <div className="bg-white rounded-lg p-6 shadow-md max-w-sm"> 
             <h1 className="text-3xl font-bold mb-8">Tracking Application</h1>
             <form onSubmit={handleSubmit}>
@@ -30,12 +31,15 @@ function TrackingID() {
             onChange={handleChange}
           />
         </div>
+        <Link to="/Student/Stepper">
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
-        >
+          >
           Track
+          
         </button>
+            </Link>
       </form>
     </div>
     </div>

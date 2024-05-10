@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
+import './styles.css';
 
 function ProfileDetails() {
   return (
@@ -26,9 +28,12 @@ function ProfileDetails() {
             <p className="text-sm font-medium text-white">Designation:</p>
             <p className="text-sm text-gray-300">Assistant Professor</p>
           </div>
+          <Link to = "/Chairperson/ProfileEdit">
+
           <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-500">
           Edit Profile
         </button>
+          </Link>
         </div>
       </div>
     </div>

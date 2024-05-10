@@ -1,23 +1,23 @@
 import React from 'react';
 import { Card, Typography, List, ListItem, ListItemPrefix } from "@material-tailwind/react";
-import { HomeIcon, BellIcon, UserCircleIcon, Cog6ToothIcon,  PowerIcon } from "@heroicons/react/24/solid";
-import './SideBarStyle.css';
+import { HomeIcon, BellIcon, UserCircleIcon, PowerIcon } from "@heroicons/react/24/solid";
+import './FSideBar.css';
 import { Link } from 'react-router-dom'; // Import Link
 
-function SideMenuBar() {
+function FSideBar() {
   return (
     <Card className={`sticky-sidebar sticky-menubar h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5 bg-[#219EBC]`} >
       {/* Sidebar Title */}
       <div className="mb-2 p-4">
         <Typography variant="h5" color="blue-gray">
-          DASHBOARD
+          Focal-Person DASHBOARD
         </Typography>
       </div>
 
       {/* Menu Items List */}
       <List className="space-y-5 text-lg"> 
         <ListItem> 
-          <Link to="./Chairperson/CHome"> {/* Link for Home */}
+          <Link to="./FocalPerson/HFocal"> {/* Link for Home */}
             <ListItemPrefix>
               <HomeIcon className="h-5 w-5" />
             </ListItemPrefix>
@@ -26,7 +26,7 @@ function SideMenuBar() {
         </ListItem>
 
         <ListItem>
-          <Link to="./MenuBar/NotificationPage"> {/* Link for Notifications */}
+          <Link to="./FocalPerson/NotificationFocal"> {/* Link for Notifications */}
             <ListItemPrefix>
               <BellIcon className="h-5 w-5" />
             </ListItemPrefix>
@@ -35,34 +35,16 @@ function SideMenuBar() {
         </ListItem>
 
         <ListItem>
-          <Link to="./Chairperson/StdContact"> 
+          <Link to="./FocalPerson/FocalMessageBox"> {/* Link for Contact CP */}
             <ListItemPrefix>
               <UserCircleIcon className="h-5 w-5" />
             </ListItemPrefix>
-            Contact Student
-          </Link>
-         </ListItem>
-
-        {/* <ListItem> */}
-          {/* <Link to="/tracking"> Link for Tracking */}
-            {/* <ListItemPrefix> */}
-              {/* <EyeIcon className="h-5 w-5" /> */}
-            {/* </ListItemPrefix> */}
-            {/* Tracking */}
-          {/* </Link> */}
-        {/* </ListItem> */}
-
-        <ListItem>
-          <Link to="./Chairperson/ProfileDetails"> {/* Link for Settings */}
-            <ListItemPrefix>
-              <Cog6ToothIcon className="h-5 w-5" />
-            </ListItemPrefix>
-            Settings
+            Contact
           </Link>
         </ListItem>
 
         <ListItem>
-          <Link to="/logout"> {/* Link for Log Out */}
+          <Link to="/"> {/* Link for Log Out */}
             <ListItemPrefix>
               <PowerIcon className="h-5 w-5" />
             </ListItemPrefix>
@@ -74,4 +56,4 @@ function SideMenuBar() {
   );
 }
 
-export default SideMenuBar;
+export default FSideBar;

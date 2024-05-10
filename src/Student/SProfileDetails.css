@@ -1,0 +1,6 @@
+.flex.flex-col.bg-blue-500.p-6.rounded-lg.shadow-md.w-96.mx-auto.mt-10 {
+    /* margin-left: 600; */
+    /* margin-top: 500px; */
+    /* If still needed after body reset */
+    justify-content: flex-start;
+}

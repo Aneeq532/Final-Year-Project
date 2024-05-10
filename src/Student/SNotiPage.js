@@ -1,10 +1,10 @@
 import React from 'react';
-import './Noti.css';
+import './SNoti.css';
 
 
-const NotificationPage = () => {
+const SNotiPage = () => {
   return (
-    <div className="container mx-auto p-4 bg-gray-100">
+    <div className="container mx-auto p-4 bg-White-100">
       <div className="notification-container"> {/* Add this container class */}
         <div className="flex justify-between items-center py-4 px-4 bg-white rounded-lg shadow-md">
           <h1 className="text-xl font-bold">Notifications</h1>
@@ -28,4 +28,4 @@ const NotificationPage = () => {
   );
 };
 
-export default NotificationPage;
+export default SNotiPage;

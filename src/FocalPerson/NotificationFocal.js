@@ -71,7 +71,7 @@ const LongDialog = () => {
   );
 };
 
-const ApplicationTracking = () => {
+const NotificationFocal = () => {
   const [openDialog, setOpenDialog] = React.useState(false);
 
   const handleClickVerified = () => {
@@ -88,7 +88,7 @@ const ApplicationTracking = () => {
       style={{ height: "80vh" }}
     >
       <div className="bg-white shadow-md rounded-lg px-6 py-8 w-1/2">
-        <h2 className="text-xl font-medium mb-4">Application Tracking</h2>
+        <h2 className="text-xl font-medium mb-4">Notification</h2>
         <table className="table-auto w-full">
           <thead>
             <tr className="text-left border-b border-gray-200">
@@ -135,4 +135,4 @@ const ApplicationTracking = () => {
   );
 };
 
-export default ApplicationTracking;
+export default NotificationFocal;
